@@ -1,0 +1,12 @@
+{
+  "name": "ds-inventario",
+  "private": true,
+  "version": "0.0.0",
+  "description": "DS Inventário — inventário de recursos de nuvem (AWS e GCP)",
+  "engines": { "node": ">=22" },
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm test --workspaces --if-present"
+  }
+}

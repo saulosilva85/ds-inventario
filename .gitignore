@@ -1,0 +1,25 @@
+# dependências e build
+node_modules/
+dist/
+build/
+.next/
+coverage/
+*.tsbuildinfo
+
+# segredos: NUNCA versionar
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+service-account*.json
+
+# supabase local
+supabase/.branches/
+supabase/.temp/
+
+# sistema/editor
+.DS_Store
+.vscode/
+.idea/
+*.log
