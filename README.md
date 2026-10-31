@@ -12,6 +12,7 @@ Fase 1 — base do projeto. Nada aqui está em produção.
 ```
 packages/core/        lógica de domínio sem dependências de infraestrutura (testada)
 packages/collector-aws/  normalização dos recursos da AWS e orquestração da coleta (testada)
+packages/collector-gcp/  normalização dos assets do GCP e orquestração da coleta (testada)
 supabase/migrations/  esquema do banco com RLS por organização
 docs/adr/             registros de decisões de arquitetura
 .github/workflows/    CI (tipos + testes)
@@ -38,5 +39,5 @@ npm test
 
 1. Aplicar a migração inicial num projeto Supabase de desenvolvimento.
 2. Testes automáticos de isolamento entre organizações (RLS).
-3. Adaptador real do AWS SDK (paginação, retentativas, `sts:AssumeRole`) e coletor GCP.
+3. Adaptadores reais: AWS SDK (paginação, retentativas, `sts:AssumeRole`) e Cloud Asset API do GCP.
 4. Aplicação web (Next.js): login, organizações e onboarding.
