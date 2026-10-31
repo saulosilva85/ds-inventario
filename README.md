@@ -13,6 +13,8 @@ Fase 1 — base do projeto. Nada aqui está em produção.
 packages/core/        lógica de domínio sem dependências de infraestrutura (testada)
 packages/collector-aws/  normalização dos recursos da AWS e orquestração da coleta (testada)
 packages/collector-gcp/  normalização dos assets do GCP e orquestração da coleta (testada)
+packages/ingest/         plano de gravação de uma coleta: novos, alterados, removidos, histórico (testado)
+packages/plans/          limites e regras por plano: conexões, recursos, exportação, retenção (testado)
 supabase/migrations/  esquema do banco com RLS por organização
 docs/adr/             registros de decisões de arquitetura
 .github/workflows/    CI (tipos + testes)
